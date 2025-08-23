@@ -1,0 +1,38 @@
+@import "tailwindcss";
+/* @import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer theme, base, components, utilities; */
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+/* 
+.hero-writeup h1, p, button {
+  animation: opacity infinite forwards ease-out 1000;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 50;
+  }
+
+  100% {
+    opacity: 100;
+  }
+} */
