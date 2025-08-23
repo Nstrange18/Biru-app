@@ -28,10 +28,10 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row p-5 justify-between items-center mb-8">
 
         <div className={`pl-15 md:pl-0 -mt-30 transition duration-800 ${ isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <h2 className="text-2xl text-[rgb(75,75,201)] md:text-2xl md:text-left mb-2 mt-10">Welcome to Biru</h2>
+          <h2 className="text-3xl text-[rgb(75,75,201)] md:text-left mb-2 mt-10">Welcome to Biru</h2>
           <p className="text-lg md:text-6xl md:text-left">We solve business <br />problems with <br />technology</p>
           
-          <p className="text-xs md:text-xl mb-4 w-20% mt-4">
+          <p className="text-sm md:text-xl mb-4 w-87 mt-4">
             Our performance is your success. Our passion is <br /> motivation. Our
             expertise is unmatched. We get you <br /> more.
           </p>
