@@ -1,0 +1,9 @@
+.hamburger-menu:focus {
+  background-color: red;
+
+
+  .nav-links {
+    display: block;
+    background-color: black;
+  }
+}
