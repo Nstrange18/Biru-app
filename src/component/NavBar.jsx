@@ -35,7 +35,7 @@ const NavBar = () => {
         </div>        
       </nav>
 
-      <div className={`${isMenuOpen ? "max-h-screen opacity-90" : "max-h-0 opacity-0"} rounded-2xl opacity-95 absolute bg-gray-900 h-29/100 backdrop-blur-3xl w-9/10 top-19 text-center transition-all duration-700 ease-in-out md:hidden overflow-hidden`} >
+      <div className={`${isMenuOpen ? "max-h-screen opacity-90" : "max-h-0 opacity-0"} rounded-2xl opacity-95 absolute backdrop-blur-3xl w-9/10 top-19 text-center transition-all duration-700 ease-in-out md:hidden overflow-hidden`} >
         <Link to="/" className="block px-4 py-3 mb-0.5 text-sm bg-gradient-to-tr from-blue-500 via-indigo-600 to-purple-700 ">Home</Link>
         <Link to="about" className="block px-4 py-3 mb-0.5 text-sm bg-gradient-to-tr from-blue-500 via-indigo-600 to-purple-700 ">About</Link>
         <Link to="services" className="block px-4 py-3 mb-0.5 text-sm bg-gradient-to-tr from-blue-500 via-indigo-600 to-purple-700 ">Services</Link>
