@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import letterB from "../assets/letter-b.png"
 import { useState, useEffect } from "react"
 // import { Icon } from "react-router-dom"
-import "../styles/Navbar.css"
+// import "../styles/Navbar.css"
 
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(false)
