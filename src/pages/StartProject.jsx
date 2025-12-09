@@ -40,10 +40,10 @@ const StartProject = () => {
     try {
       await emailjs
         .sendForm(
-          "service_05b6zc5",
-          "template_h4tb1jm",
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_START_TEMPLATE_ID,
           formRef.current,
-          "PshHKjjyzNvHfTkH2"
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then((result) => {
           toast.success("Project submission successful!", result);

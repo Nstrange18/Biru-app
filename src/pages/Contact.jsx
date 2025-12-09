@@ -34,10 +34,10 @@ const Contact = () => {
     try {
       await emailjs
         .sendForm(
-          "service_05b6zc5",
-          "template_mb6r85v",
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
           formRef.current,
-          "PshHKjjyzNvHfTkH2"
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then((result) => {
           toast.success("Message successfully sent!", result);
