@@ -49,8 +49,20 @@ const StartProject = () => {
           toast.success("Project submission successful!", result);
           formRef.current.reset();
         });
-    } catch (error) {
-      toast.error("Project submission failed.", error);
+    } catch (err) {
+      // 🔍 Log full error for debugging
+      console.error("EmailJS error:", err);
+
+      // EmailJS usually returns { text: "some message" }
+      const message =
+        err?.text ||
+        err?.message ||
+        "Unexpected error from EmailJS. Check console for details.";
+
+      // Show a more useful toast
+      toast.error("Something went wrong. Please try again.", {
+        description: String(message),
+      });
     }
   };
 

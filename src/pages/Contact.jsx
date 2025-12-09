@@ -43,8 +43,20 @@ const Contact = () => {
           toast.success("Message successfully sent!", result);
           formRef.current.reset(); // clear form
         });
-    } catch (error) {
-      toast.error("Something went wrong. Please try again.", error);
+    } catch (err) {
+      // 🔍 Log full error for debugging
+      console.error("EmailJS error:", err);
+
+      // EmailJS usually returns { text: "some message" }
+      const message =
+        err?.text ||
+        err?.message ||
+        "Unexpected error from EmailJS. Check console for details.";
+
+      // Show a more useful toast
+      toast.error("Something went wrong. Please try again.", {
+        description: String(message),
+      });
     }
   };
 
