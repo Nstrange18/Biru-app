@@ -15,9 +15,9 @@ body::-webkit-scrollbar {
   background: transparent;
 }
 
-button {
+/* button {
   cursor: pointer;
-}
+} */
 /* 
 .hero-writeup h1, p, button {
   animation: opacity infinite forwards ease-out 1000;
