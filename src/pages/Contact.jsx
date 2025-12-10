@@ -51,7 +51,7 @@ const Contact = () => {
       const message =
         err?.text ||
         err?.message ||
-        "Unexpected error from EmailJS. Check console for details.";
+        "Unexpected error from EmailJS.";
 
       // Show a more useful toast
       toast.error("Something went wrong. Please try again.", {
