@@ -118,17 +118,17 @@ const NavBar = () => {
           aria-label="Toggle menu"
         >
           <span
-            className={`h-0.5 w-8 rounded bg-slate-300 transition-transform ${
+            className={`h-0.5 w-8 rounded bg-slate-500 transition-transform ${
               isMenuOpen ? "translate-y-1.5 rotate-45" : ""
             }`}
           />
           <span
-            className={`h-0.5 w-8 rounded bg-slate-300 transition-opacity ${
+            className={`h-0.5 w-8 rounded bg-slate-500 transition-opacity ${
               isMenuOpen ? "opacity-0" : "opacity-100"
             }`}
           />
           <span
-            className={`h-0.5 w-8 rounded bg-slate-300 transition-transform ${
+            className={`h-0.5 w-8 rounded bg-slate-500 transition-transform ${
               isMenuOpen ? "-translate-y-1.5 -rotate-45" : ""
             }`}
           />
